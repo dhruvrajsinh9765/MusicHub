@@ -14,6 +14,8 @@ body{
     background-color: black;
     position:sticky;
     top:0;
+    flex-wrap: wrap; /* Ensures items don’t overflow */
+    justify-content: center; /* Centers content */
  }
 #logo{
     height:70px;
@@ -51,12 +53,17 @@ body{
     font-weight: bolder;
 }
 .lib{
-    background-color: rgb(37, 36, 36);
+    background-color: #252424;
     height:800px;
+    max-width: 100%;
+    min-width: 100%;
     margin-top: 7px;
     margin-left:7px;
     margin-right:7px ;
     border-radius: 20px;
+    
+    overflow: hidden;
+    box-sizing: border-box;
     
 }
 
@@ -69,6 +76,8 @@ body{
 }
 .lib  .singer{
     display:flex;
+    flex-wrap: wrap; /* Ensures items don’t overflow */
+    justify-content: center; /* Centers content */
 }
 
 .singer img{
@@ -117,12 +126,14 @@ body{
 }
 .trending_songs{
     margin-top:25px;
+    flex-wrap: wrap; /* Ensures items don’t overflow */
+    justify-content: center; /* Centers content */
 }
 .songs_info{
     display:flex;
     margin-top:20px;
      margin-left:20px; 
-    
+     
 }
 .songs_info img{
     height:200px;
