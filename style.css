@@ -167,9 +167,7 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(145, 148, 151)
 }
-/* .singer img {
-    transition: transform 0.4s, box-shadow 0.3s;
-} */
+
 
 .singer img:hover {
     transform: rotate(5deg) scale(1.1);
