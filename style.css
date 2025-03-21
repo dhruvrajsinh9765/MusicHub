@@ -14,7 +14,7 @@ body{
     background-color: black;
     position:sticky;
     top:0;
-    flex-wrap: wrap; /* Ensures items don’t overflow */
+    
     justify-content: center; /* Centers content */
  }
 #logo{
