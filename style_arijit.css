@@ -95,7 +95,7 @@ body{
 .songs div:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+    
     border-radius: 10px;
 }
 
