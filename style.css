@@ -9,7 +9,7 @@ body{
 }
  .navbar{
     height:70px;
-    display: flex;
+    display: block;
     align-items: center;
     background-color: black;
     position:sticky;
