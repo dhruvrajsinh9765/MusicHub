@@ -1,0 +1,99 @@
+*{
+    margin : 0px;
+    padding : 0px;
+}
+body{
+    color:white;
+    background-color: rgb(25, 13, 37);
+}
+.navbar{
+    background-color: rgb(97, 106, 139);
+    height:250px;
+    display:flex;
+    position:sticky;
+    top:0;
+}
+.img img{
+    margin-left:30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height:220px;
+    border-radius: 50%;
+}
+.title{
+    margin-left: 40px;
+    margin-top: 40px;
+    color:white;
+}
+.title h1{
+   font-size: 80px;
+}
+.title  img{
+    height:25px;
+}
+.title p{
+    text-decoration: none;
+    font-size: 30px;
+}
+.title h2{
+    font-weight: lighter;
+}
+.main_title{
+    margin-top:20px;
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.music_track{
+    display:flex;
+    margin-left:40px;
+    margin-top: 20px;
+}
+.music_track img{
+    margin-left:30px;
+   
+    height:70px;
+}
+#song1{
+    display:flex;
+}
+.songs p{
+    margin-top: 20px;
+    margin-left:30px;
+}
+.songs a{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left:30px;
+    color:white;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#song2{
+    display:flex;
+}
+#song3{
+    display:flex;
+}
+#song4{
+    display:flex;
+}
+#song5{
+    display:flex;
+}
+.info{
+    display:flex;
+   margin-top:20px;
+   
+
+}
+.info #numbers,#time{
+    margin-left:30px;
+}
+
+.info p{
+    margin-bottom: 84px;
+    font-size: 20px;
+    font-family: Arial;
+}
