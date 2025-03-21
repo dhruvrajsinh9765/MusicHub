@@ -28,6 +28,12 @@ body{
 .title h1{
    font-size: 80px;
 }
+.title h1:hover {
+    color: cyan;
+    text-shadow: 0px 0px 15px cyan;
+    
+}
+
 .title  img{
     height:25px;
 }
@@ -59,41 +65,73 @@ body{
 }
 .songs p{
     margin-top: 20px;
-    margin-left:30px;
 }
 .songs a{
     text-decoration: none;
     margin-top: 20px;
-    margin-left:30px;
     color:white;
     font-size: 20px;
     font-family: Arial;
 }
+.song_name{
+    margin-left:30px;
+}
+.songs pre{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: Arial;
+}
+.songs pre:hover {
+    
+    color: cyan;
+    
+}
+.navbar:hover {
+    background-color:  rgb(47, 50, 80);
+    
+}
 
-#song2{
+.songs div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.songs div{
+    padding-left:10px;
+    padding-right:10px;
+}
+.songs div{
     display:flex;
 }
-#song3{
-    display:flex;
-}
-#song4{
-    display:flex;
-}
-#song5{
-    display:flex;
-}
+
 .info{
     display:flex;
    margin-top:20px;
    
 
 }
-.info #numbers,#time{
-    margin-left:30px;
-}
 
 .info p{
     margin-bottom: 84px;
     font-size: 20px;
     font-family: Arial;
+}
+.views{
+    color:white;
+    font-size:20px;
+    font-family: Arial;
+    text-align: right;
+    justify-content: space-between;
+    margin-left:60px;
+}
+.time{
+    color:white;
+    font-size:20px;
+    font-family: Arial;
+    text-align: right;
+    justify-content: space-between;
+    margin-left: 60px;
 }

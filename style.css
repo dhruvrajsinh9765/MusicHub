@@ -9,13 +9,15 @@ body{
 }
  .navbar{
     height:70px;
-    display: block;
+    display: flex;
     align-items: center;
     background-color: black;
     position:sticky;
-    top:0;
-    
+    justify-content: space-between;
     justify-content: center; /* Centers content */
+    top:0;
+    overflow: hidden;
+    box-sizing: border-box;
  }
 #logo{
     height:70px;
@@ -110,6 +112,8 @@ body{
     color:white;
 
 }
+
+
 .singer img:hover{
     transform: scale(1.2);
 }
@@ -119,6 +123,11 @@ body{
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(58, 173, 226, 0.901);
 }
+.song_name:hover {
+    color: #ff6600;
+    transition: color 0.3s ease;
+}
+
 
 #song1,#song2,#song3,#song4,#song5,#song6{
     margin-left: 15px;
@@ -128,11 +137,12 @@ body{
     margin-top:25px;
     flex-wrap: wrap; /* Ensures items don’t overflow */
     justify-content: center; /* Centers content */
+    
 }
 .songs_info{
     display:flex;
     margin-top:20px;
-     margin-left:20px; 
+     margin-left:40px; 
      
 }
 .songs_info img{
@@ -157,3 +167,12 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(145, 148, 151)
 }
+/* .singer img {
+    transition: transform 0.4s, box-shadow 0.3s;
+} */
+
+.singer img:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.8);
+}
+
