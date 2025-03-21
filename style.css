@@ -104,35 +104,16 @@ body{
 .singer img:hover{
     transform: scale(1.2);
 }
-/* .songs_info img:hover{
-    transform: scale(1.1);
-} */
-.songs_info img::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    0deg, 
-    transparent, 
-    transparent 30%, 
-    rgba(0,255,255,0.3)
-  );
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
+
 
 .songs_info img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+  box-shadow: 0 0 20px rgba(58, 173, 226, 0.901);
 }
 
-.songs_info img:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
+#song1,#song2,#song3,#song4,#song5,#song6{
+    margin-left: 15px;
+    margin-right:15px;
 }
 .trending_songs{
     margin-top:25px;
@@ -140,13 +121,13 @@ body{
 .songs_info{
     display:flex;
     margin-top:20px;
+     margin-left:20px; 
     
 }
 .songs_info img{
     height:200px;
     border-radius: 15px;
-    margin-left:10px;
-    margin-right:10px;
+    
 }
 .songs_info a{
     text-decoration: none;
@@ -155,12 +136,12 @@ body{
 .song_name{
     font-size:20px;
     margin-top:5px;
-    margin-left:20px;
+    margin-left:10px;
     font-weight: bolder;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .song_artist{
-    margin-left:20px;
+    margin-left:10px;
     margin-top:5px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(145, 148, 151)
