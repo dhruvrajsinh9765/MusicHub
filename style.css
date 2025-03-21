@@ -101,6 +101,12 @@ body{
     color:white;
 
 }
+.singer img:hover{
+    transform: scale(1.2);
+}
+.songs_info img:hover{
+    transform: scale(1.1);
+}
 .trending_songs{
     margin-top:25px;
 }
