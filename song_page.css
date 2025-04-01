@@ -5,12 +5,30 @@
 body{
     background-color: rgb(55, 51, 50);
 }
-.navbar{
-    background-color: rgb(37, 13, 61);
-    height:300px;
-    display:flex;
-    position:sticky;
-    top:0;
+
+.navbar {
+    background-color: black;
+    position: relative;  /* Make navbar sticky */
+    top: 0;  /* Sticky from top of the page */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    
+    color: whitesmoke;
+    overflow: hidden;  /* Prevent overflow if video is larger than navbar */
+    z-index: 1; /* Ensure navbar is above the background video */
+}
+
+#myvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the video covers the entire navbar */
+    height: 100%; /* Makes sure it stretches across the entire navbar height */
+    object-fit: cover; /* Ensures the video covers the entire background */
+    opacity: 0.5; /* Makes the video semi-transparent */
+    z-index: -1;  /* Keeps the video behind all other content */
+     
 }
 .navbar img{
     margin-top:30px;
@@ -33,6 +51,7 @@ body{
     margin-top: 10px;
     font-family: arial;
 }
+
 .container{
     display :flex;
     margin-top:20px;
