@@ -1,4 +1,11 @@
 /* General reset and basic styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +23,7 @@ body {
   height: 70px;
   display: flex;
   align-items: center;
-  background-color: black;
+  background-color: rgb(47, 45, 45);
   position: sticky;
   top: 0;
   box-sizing: border-box;
@@ -42,7 +49,7 @@ body {
   font-size: 18px;
   font-weight: bolder;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 200px;
 }
 
 .navbar a {
@@ -50,6 +57,9 @@ body {
   margin-right: 20px;
   font-size: 20px;
   color: white;
+}
+.navbar a:hover{
+  color:orangered;
 }
 
 .navbar button {
@@ -61,10 +71,18 @@ body {
   height: 40px;
   font-weight: bolder;
 }
+.navbar button:hover{
+  transform: scale(1.2);
+ background-color: #ff6600;
+}
 
 /* Main Library Section */
 .lib {
-  background-color: #252424;
+  /* background-color: #252424; */
+ 
+  
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 800px;
   max-width: 100%;
   margin-top: 7px;
@@ -78,9 +96,14 @@ body {
 /* Title Styling */
 .lib .title {
   margin-top: 10px;
-  color: white;
-  font-size: 24px;
+  font-size: 15px;
+  text-decoration: underline;
   margin-left: 20px;
+  font-family: Krona One;
+  background: linear-gradient(to top, red, yellow);
+ -webkit-background-clip: text;
+ background-clip: text;
+color: transparent;
 }
 
 /* Singer Section Styling */
@@ -98,12 +121,16 @@ body {
 }
 
 .singer p {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 20px;
   margin-left: 47px;
   color: white;
+  font-family: Caveat;
 }
+.singer p:hover{
+  color:orangered;
 
+}
 .singer a {
   text-decoration: none;
 }
@@ -119,12 +146,13 @@ body {
   margin-top: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-left: 0px;
 }
 
 .songs_info img {
   height: 200px;
   border-radius: 15px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .songs_info a {
@@ -133,10 +161,11 @@ body {
 }
 
 .song_name {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 5px;
   margin-left: 10px;
   font-weight: bolder;
+  font-family: Caveat;
 }
 
 .song_artist {
@@ -153,6 +182,6 @@ body {
 
 .song_name:hover {
   color: #ff6600;
-  transition: color 0.3s ease;
+  
 }
 
