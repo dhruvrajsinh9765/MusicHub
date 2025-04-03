@@ -57,9 +57,27 @@ body {
   margin-right: 20px;
   font-size: 20px;
   color: white;
+  position: relative;
 }
-.navbar a:hover{
-  color:orangered;
+
+
+.navbar .link::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: orangered;
+  
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar .link:hover::after {
+  width: 100%;
+  color: blue;
+  left: 0;
+  
 }
 
 .navbar button {
@@ -191,4 +209,119 @@ color: transparent;
   color: #ff6600;
   transform: scale(1.1);
 }
+/* Footer (Bottom Bar) Styling */
+.footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 15px;
+  min-width: 250px;
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff6600;
+  font-family: 'Caveat', cursive;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-link {
+  color: #ff6600;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-link {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ff6600;
+}
+
+.social-links i {
+  transition: color 0.3s ease;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* Ensure footer is at the bottom of the page */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+}

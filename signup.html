@@ -3,61 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>Sign Up | MusicHub</title>
+
+    <!-- Internal CSS for styling -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset and Body */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: black; /* Changed to black */
-            color: white;
+            min-height: 100vh;
         }
+
         .signup-container {
-            background-color: #333;
-            border-radius: 10px;
-            padding: 20px 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
+            height: 100vh;
         }
-        .signup-container h1 {
-            margin-bottom: 20px;
-        }
-        .signup-container input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        .signup-container button {
-            background-color: #1DB954;
+
+        /* Signup Box */
+        .signup-box {
+            background: linear-gradient(135deg, rgba(41, 40, 40, 0.8), rgba(13, 13, 13, 0.8));
+            border-radius: 15px;
+            padding: 40px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
             color: white;
-            padding: 10px 20px;
+        }
+        img{
+            height:80px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-family: 'Caveat', cursive;
+            color: white;
+        }
+
+        /* Input Fields */
+        .textbox {
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .textbox input {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            border: 2px solid #555;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .textbox input:focus {
+            border-color: #ff6600;
+        }
+
+        /* Button */
+        button.btn {
+            width: 100%;
+            padding: 12px;
+            background: #ff6600;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        .signup-container button:hover {
-            background-color: #14803d;
+
+        button.btn:hover {
+            background: #4c00ff;
+        }
+
+        /* Already have an account link */
+        .signin-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signin-link a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+
+        .signin-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .signup-box {
+                width: 90%;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .textbox input {
+                font-size: 16px;
+            }
+            button.btn {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="signup-container">
-        <h1>Create Your Account</h1>
-        <form action="/submit-signup" method="post">
-            <input type="text" name="username" placeholder="Username" required><br>
-            <input type="email" name="email" placeholder="Email" required><br>
-            <input type="password" name="password" placeholder="Password" required><br>
-            <button type="submit">Sign Up</button>
-        </form>
+        <div class="signup-box">
+            <img src="images\logo.png" alt="Logo">
+            <br>
+            <h2>Sign Up</h2>
+            <form action="#" method="post">
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="signin-link">
+                    Already have an account? <a href="login.html">Sign In</a>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
