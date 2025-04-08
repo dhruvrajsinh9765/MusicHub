@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Your Website</title>
+    <style>
+        /* General Reset and Basic Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(47, 45, 45);
+            position: sticky;
+            top: 0;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+
+        #logo {
+            height: 70px;
+        }
+
+        #home {
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        .navbar input {
+            width: 300px;
+            background-color: white;
+            margin-left: 10px;
+            height: 40px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bolder;
+            text-align: center;
+            margin-right: 200px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 20px;
+            color: white;
+            position: relative;
+        }
+
+        .navbar .link::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: orangered;
+            transition: width 0.4s ease, left 0.4s ease;
+        }
+
+        .navbar .link:hover::after {
+            width: 100%;
+            color: blue;
+            left: 0;
+        }
+
+        .navbar button {
+            color: black;
+            background-color: white;
+            border-radius: 30px;
+            text-align: center;
+            width: 80px;
+            height: 40px;
+            font-weight: bolder;
+        }
+
+        .navbar button:hover {
+            transform: scale(1.2);
+            background-color: #ff6600;
+        }
+
+        /* Support Page Styles */
+        .support-page {
+            margin: 30px;
+        }
+
+        .support-page h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ff6600;
+            font-family: 'Krona One', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .faq {
+            margin-top: 30px;
+        }
+
+        .faq h2 {
+            font-size: 2em;
+            color: #ff6600;
+            font-family: 'Krona One', sans-serif;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h3 {
+            font-size: 1.6em;
+            color: white;
+            margin-bottom: 5px;
+            font-family: 'Caveat', sans-serif;
+        }
+
+        .faq-item p {
+            font-size: 1.2em;
+            color: #bbb;
+            font-family: 'Arial', sans-serif;
+            margin-left: 20px;
+        }
+
+        .contact-support {
+            margin-top: 40px;
+        }
+
+        .contact-support h2 {
+            font-size: 2em;
+            color: #ff6600;
+            font-family: 'Krona One', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .support-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .support-form label {
+            font-size: 1.2em;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .support-form input,
+        .support-form textarea {
+            font-size: 1em;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .support-form button {
+            padding: 12px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .support-form button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 0;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (assuming you already have one) -->
+    <nav class="navbar">
+        <img id="logo" src="logo.png" alt="Logo">
+        <a href="#home" class="link">Home</a>
+        <a href="#about" class="link">About</a>
+        <a href="#support" class="link">Support</a>
+        <input type="text" placeholder="Search...">
+    </nav>
+
+    <!-- Main Support Section -->
+    <div class="support-page">
+        <h1>Support Center</h1>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-item">
+                <h3>How do I reset my password?</h3>
+                <p>If you have forgotten your password, click on the 'Forgot Password' link on the login page, and follow the instructions to reset your password.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I contact customer support?</h3>
+                <p>You can contact us through the 'Contact Us' page or email us at support@yourwebsite.com.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I update my account information?</h3>
+                <p>To update your account information, go to your profile page and click on 'Edit Profile'.</p>
+            </div>
+        </section>
+
+        <section class="contact-support">
+            <h2>Contact Support</h2>
+            <form action="submit-support-request.php" method="post" class="support-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="issue">Issue Description</label>
+                <textarea id="issue" name="issue" rows="5" required></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Your Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

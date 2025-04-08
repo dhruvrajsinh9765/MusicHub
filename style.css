@@ -23,11 +23,13 @@ body {
   height: 70px;
   display: flex;
   align-items: center;
-  background-color: rgb(47, 45, 45);
-  position: sticky;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width:100%;
   top: 0;
   box-sizing: border-box;
   padding: 0 20px;
+  z-index: 1000;
 }
 
 #logo {
@@ -96,18 +98,18 @@ body {
 
 /* Main Library Section */
 .lib {
-  /* background-color: #252424; */
- 
+   background-color: #252424; 
+ padding-top:70px;
   
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 800px;
+  /* min-height: 800px; */
   max-width: 100%;
   margin-top: 7px;
-  margin-left: 7px;
+  /* margin-left: 7px; */
   margin-right: 7px;
   border-radius: 20px;
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box;
 }
 
@@ -115,41 +117,48 @@ body {
 .lib .title {
   margin-top: 10px;
   font-size: 15px;
-  text-decoration: underline;
   margin-left: 20px;
   font-family: Krona One;
-  background: linear-gradient(to top, red, yellow);
- -webkit-background-clip: text;
- background-clip: text;
-color: transparent;
+ color:antiquewhite;
 }
 
 /* Singer Section Styling */
 .lib .singer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 30px;
 }
-
-
-.singer img {
-  width: 180px;
-  height: 200px;
-  border-radius: 50%;
+#ari{
+  
+  margin-right: 10px;
   margin-left: 10px;
-  margin-right:10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.singer_prof{
+  font-size: 15px;
+  color:gray;
+}
+.singer img {
+  width: 160px;
+  height: 170px;
+  border-radius: 50%;
+   /* margin-left: 10px;  */
+  /* margin-right:10px; */
 }
 #ari:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(14, 14, 14, 0.3);
   transform: scale(1.05);
   border-radius: 10px;
 }
 #ari p {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 20px;
-  margin-left: 35px;
+  margin-right: 35px;
   color: white;
-  font-family: Caveat;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom:5px;
 }
 #ari p:hover{
@@ -169,15 +178,15 @@ color: transparent;
 .songs_info {
   display: flex;
   margin-top: 20px;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 
 .songs_info img {
-  height: 200px;
+  height: 170px;
   border-radius: 15px;
-  margin-right: 20px;
+  
 }
 
 .songs_info a {
@@ -191,6 +200,8 @@ color: transparent;
   margin-left: 10px;
   font-weight: bolder;
   font-family: Caveat;
+  max-width: 150px;
+  
 }
 
 .song_artist {
@@ -209,9 +220,37 @@ color: transparent;
   color: #ff6600;
   transform: scale(1.1);
 }
+.song1{
+  position: relative;
+  margin-right: 10px;
+  padding:10px;
+  padding-bottom: 25px;
+  padding-top: 0px;
+}
+.song1:hover{
+
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    border-radius: 10px;
+    
+}
+.song1 .play-button {
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:none;
+  color: white;
+  font-size: 35px; /* Adjust the size of the button */
+  color:#ff6600;
+}
+
+.song1:hover .play-button {
+  display: block; /* Show the play button when hovering */
+}
 /* Footer (Bottom Bar) Styling */
 .footer {
-  background-color: #2d2d2d;
+  background-color: #000000;
   color: white;
   padding: 40px 0;
   text-align: center;
@@ -243,7 +282,7 @@ color: transparent;
   font-size: 18px;
   margin-bottom: 10px;
   color: #ff6600;
-  font-family: 'Caveat', cursive;
+  font-family:  cursive;
 }
 
 .footer p {
@@ -272,6 +311,7 @@ color: transparent;
 
 .footer-bottom {
   margin-top: 30px;
+  margin-left: 430px;
 }
 
 .footer-links {
@@ -291,6 +331,7 @@ color: transparent;
 
 .social-links {
   margin-top: 15px;
+
 }
 
 .social-link {
