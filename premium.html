@@ -17,54 +17,92 @@
         }
 
         body {
-            background-color: black;
+            background-color: rgb(32, 32, 32);
             color: white;
             font-family: Arial, sans-serif;
         }
 
         /* Navbar Styling */
         .navbar {
-            height: 70px;
-            display: flex;
-            align-items: center;
-            background-color: rgb(47, 45, 45);
-            position: sticky;
-            top: 0;
-            box-sizing: border-box;
-            padding: 0 20px;
-        }
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width:100%;
+  top: 0;
+  box-sizing: border-box;
+  padding: 0 20px;
+  z-index: 1000;
+}
 
-        #logo {
-            height: 70px;
-        }
+#logo {
+  height: 70px;
+}
 
-        .navbar a {
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 20px;
-            color: white;
-            position: relative;
-        }
+#home {
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
 
-        .navbar button {
-            color: black;
-            background-color: white;
-            border-radius: 30px;
-            text-align: center;
-            width: 80px;
-            height: 40px;
-            font-weight: bolder;
-        }
+.navbar input {
+  width: 300px;
+  background-color: white;
+  margin-left: 10px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  margin-right: 200px;
+}
 
-        .navbar button:hover {
-            transform: scale(1.2);
-            background-color: #ff6600;
-        }
+.navbar a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+  color: white;
+  position: relative;
+}
 
+
+.navbar .link::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: orangered;
+  
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar .link:hover::after {
+  width: 100%;
+  color: blue;
+  left: 0;
+  
+}
+
+.navbar button {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  font-weight: bolder;
+}
+.navbar button:hover{
+  transform: scale(1.2);
+ background-color: #ff6600;
+}
         /* Premium Page Styling */
         .premium-page {
             text-align: center;
-            padding: 50px 20px;
+            padding: 120px 20px 50px; 
         }
 
         .premium-page h1 {
@@ -211,15 +249,19 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <img id="logo" src="logo.png" alt="Logo">
-        <a href="#home" class="link">Home</a>
-        <a href="#about" class="link">About</a>
-        <a href="#support" class="link">Support</a>
-        <a href="#premium" class="link">Premium</a>
-        <input type="text" placeholder="Search...">
-    </nav>
+    <div class="navbar">
+        <img src="images\logo.png" id="logo">
+        <a href="index.html"><img src="https://i.pinimg.com/736x/71/89/88/718988215800391b6050182a28ca6810.jpg" id="home"></a>
+         <input type="textarea" placeholder="Search your song">
+         <a href="premium.html" class="link">Premium Plus</a>
+         <a href="support.html" class="link">Support</a>
+         <a href="about.html" class="link">About us</a>
+         <a>|</a>
+         <a href="playlist.html" class="link">Playlist</a>
+         <a href="signup.html" class="link">Signup</a>
+         <a href="login.html">
+         <button type="button">Login</button></a>
+    </div>
 
     <!-- Premium Page Content -->
     <div class="premium-page">
@@ -317,7 +359,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Your Website. All Rights Reserved.</p>
+        <p>© 2025 MusicHub. All Rights Reserved.</p>
     </footer>
 
 </body>

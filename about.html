@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | MusicHub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width:100%;
+  top: 0;
+  box-sizing: border-box;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+#logo {
+  height: 70px;
+}
+
+#home {
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.navbar input {
+  width: 300px;
+  background-color: white;
+  margin-left: 10px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  margin-right: 200px;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+  color: white;
+  position: relative;
+}
+
+
+.navbar .link::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: orangered;
+  
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar .link:hover::after {
+  width: 100%;
+  color: blue;
+  left: 0;
+  
+}
+
+.navbar button {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  font-weight: bolder;
+}
+.navbar button:hover{
+  transform: scale(1.2);
+ background-color: #ff6600;
+}
+
+
+    /* Hero Section */
+    .about-hero {
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      text-align: center;
+      padding: 120px 20px 50px; 
+    }
+
+    .about-hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .about-hero p {
+      font-size: 1.3rem;
+    }
+
+    /* Content Sections */
+    .section {
+      padding: 60px 0;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff4b2b;
+    }
+
+    .section p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+      color: #dddddd;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    /* Offerings List */
+    .offerings ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 15px;
+      color: #cccccc;
+    }
+
+    /* Team Cards */
+    .team-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1f1f1f;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      text-align: center;
+      padding: 20px;
+      flex: 1 1 250px;
+      color: #e0e0e0;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #ff4b2b;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1e1e1e;
+      color: #888;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    /* Scrollbar (optional) */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #ff4b2b;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="images\logo.png" id="logo">
+        <a href="index.html"><img src="https://i.pinimg.com/736x/71/89/88/718988215800391b6050182a28ca6810.jpg" id="home"></a>
+         <input type="textarea" placeholder="Search your song">
+         <a href="premium.html" class="link">Premium Plus</a>
+         <a href="support.html" class="link">Support</a>
+         <a href="about.html" class="link">About us</a>
+         <a>|</a>
+         <a href="playlist.html" class="link">Playlist</a>
+         <a href="signup.html" class="link">Signup</a>
+         <a href="login.html">
+         <button type="button">Login</button></a>
+    </div>
+
+  <section class="about-hero">
+    <div class="container">
+      <h2>About MusicHub</h2>
+      <p>Your ultimate destination for discovering and sharing music.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h3>Who We Are</h3>
+    <p>
+      <span class="highlight">MusicHub</span> is a community-driven music platform designed for music lovers, creators, and professionals alike. Whether you're a fan exploring new sounds or an artist looking to share your latest track, MusicHub empowers you to connect through rhythm and melody.
+    </p>
+  </section>
+
+  <section class="section container">
+    <h3>Our Mission & Vision</h3>
+    <p>
+      We aim to democratize the music industry by offering independent artists a stage and listeners a space for discovery. Our vision is a world where everyone can access, enjoy, and participate in music culture—without barriers.
+    </p>
+  </section>
+
+  <section class="section container">
+    <h3>Our Story</h3>
+    <p>
+      Founded in 2024 by a group of passionate developers and musicians, MusicHub began as a small project to share music with friends. Today, it has grown into a vibrant hub with thousands of users connecting over their favorite tunes.
+    </p>
+  </section>
+
+  <section class="section container offerings">
+    <h3>What We Offer</h3>
+    <p>MusicHub provides tools and features to help artists grow and fans engage:</p>
+    <ul>
+      <li>Music streaming and sharing</li>
+      <li>Artist and fan profiles</li>
+      <li>Playlist creation and curation</li>
+      <li>Live events and virtual concerts</li>
+      <li>Community forums and feedback</li>
+    </ul>
+  </section>
+
+  <section class="section container">
+    <h3>Meet the Team</h3>
+    <div class="team-cards">
+      <div class="card">
+        
+        <h4>Gamit Prince</h4>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="card">
+        
+        <h4>Ghariya Dhruvrajsinh</h4>
+        <p>Lead Designer</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section container">
+    <h3>Join Our Community</h3>
+    <p>
+      MusicHub is more than a platform — it’s a movement. Join us today to help shape the future of music. Whether you're here to listen, create, or collaborate, there's a place for you at MusicHub.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 MusicHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
